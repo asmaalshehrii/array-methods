@@ -1,4 +1,4 @@
-// My own version of Array.prototype.map
+// version of Array.prototype.map
 Array.prototype.myMap = function(callback) {
     const result = [];
     for (let i = 0; i < this.length; i++) {
@@ -10,7 +10,7 @@ Array.prototype.myMap = function(callback) {
     return result;
   };
   
-  // My own version of Array.prototype.filter
+  // version of Array.prototype.filter
   Array.prototype.myFilter = function(callback) {
     const result = [];
     for (let i = 0; i < this.length; i++) {
@@ -21,7 +21,7 @@ Array.prototype.myMap = function(callback) {
     return result;
   };
   
-  // My own version of Array.prototype.reduce
+  // version of Array.prototype.reduce
   Array.prototype.myReduce = function(callback, initialValue) {
     let accumulator = initialValue;
     let startIdx = 0;
@@ -39,7 +39,7 @@ Array.prototype.myMap = function(callback) {
     return accumulator;
   };
   
-  // My own version of Array.prototype.includes
+  // version of Array.prototype.includes
   Array.prototype.myIncludes = function(valueToFind) {
     for (let i = 0; i < this.length; i++) {
       if (this[i] === valueToFind || (Number.isNaN(valueToFind) && Number.isNaN(this[i]))) {
@@ -49,7 +49,7 @@ Array.prototype.myMap = function(callback) {
     return false;
   };
   
-  // My own version of Array.prototype.find
+  // version of Array.prototype.find
   Array.prototype.myFind = function(callback) {
     for (let i = 0; i < this.length; i++) {
       if (i in this && callback(this[i], i, this)) {
@@ -59,7 +59,7 @@ Array.prototype.myMap = function(callback) {
     return undefined;
   };
   
-  // My own version of Array.prototype.slice
+  //version of Array.prototype.slice
   Array.prototype.mySlice = function(start = 0, end = this.length) {
     const result = [];
     let actualStart = start < 0 ? Math.max(this.length + start, 0) : Math.min(start, this.length);
